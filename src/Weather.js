@@ -52,7 +52,8 @@ const Weather = () => {
 
 // can't pass the 'set state' function to the initial instance of the state;
 // so, use a higher order function, to execute the set state function after its creation.
-  // const [display, setDisplay] = useState( <OneDay weather={weather} update={updateDisplay} /> );
+// const [display, setDisplay] = useState( <OneDay weather={weather} update={updateDisplay} /> );
+// wonder if one can pass "setDisplay", or even just "display" as a useEffect dependency, to update the child component with parent's setDisplay function -- foregoing an initial render)
 
   return(
     <React.Fragment>
